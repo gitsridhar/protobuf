@@ -9,3 +9,4 @@ generate:
 clean:
 	rm proto/*.pb.go
 	rm protobuf
+	rm simple.bin
