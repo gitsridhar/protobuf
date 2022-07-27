@@ -15,6 +15,16 @@ func doSimple() *pb.Simple {
 	}
 }
 
+func doComplex() *pb.Complex {
+	return &pb.Complex{
+		OneDummy: &pb.Dummy{Id: 42, Name: "My Name"},
+		MultipleDummies: []*pb.Dummy{
+			{Id: 43, Name: "My Name 2"},
+			{Id: 44, Name: "My Name 3"},
+		},
+	}
+}
 func main() {
 	fmt.Println(doSimple())
+	fmt.Println(doComplex())
 }

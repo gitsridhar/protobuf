@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/svenkat/Documents/git/protobuf'
+protoc -Iproto --go_opt=module=github.com/gitsridhar/protobuf --go_out=. proto/*.proto
+go build .
+make: Leaving directory `/Users/svenkat/Documents/git/protobuf'
+ 
